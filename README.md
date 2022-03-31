@@ -18,6 +18,19 @@ algoritmos
 				 */
 				 
 				 
+		===========================================================================================		 
+
+			/*Algoritmo 24 - Ler uma temperatura em graus centígrados e 
+			 *apresentá-la convertida em graus Fahrenheit. 
+			 *A fórmula de conversão está na lista1:   
+			 */
+		
+		double cm = Double.parseDouble(JOptionPane.showInputDialog(null, "Converter graus Celsius para Fahrenheit. Escreva os graus centígrafos."));
+		double Fahrenheit = (cm+160)/5;
+		JOptionPane.showMessageDialog(null, "Resultado de F: " +Fahrenheit);
+		==================================================================================================				 
+				 
+
 				 
 				 
 				 /*Algoritmo 25 - Calcular e apresentar o valor do volume 
