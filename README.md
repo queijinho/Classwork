@@ -46,3 +46,88 @@ algoritmos
 		high = Double.parseDouble(JOptionPane.showInputDialog(null, "Escreva a altura da lata."));
 		double volume = 3.14*(raio*raio)*high;
 		JOptionPane.showMessageDialog(null, "Volume da lata é "+volume);
+
+
+
+
+
+===============================================================================================================
+Class Conta:
+private double saldo;
+	public abstract void imprimirExtrato();
+	
+	
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+Class ContaCorrrente:
+@Override
+	public void depositar(double valor$) {
+		// TODO Auto-generated method stub
+		this.setSaldo(this.getSaldo()+valor$);
+	}
+
+	@Override
+	public void sacar(double valor$) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void imprimirExtrato() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+Class ContaPoupança:
+@Override
+	public void imprimirExtrato() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void depositar(double valor$) {
+		// TODO Auto-generated method stub
+		this.setSaldo(this.getSaldo()+valor$);
+	}
+
+	@Override
+	public void sacar(double valor$) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+Interface:
+void depositar(double valor$);
+	void sacar(double valor$);
+	
+	
+class Principal:
+Scanner leia = new Scanner (System.in);
+		int sair;
+		do {
+			ContaCorrente cc = new ContaCorrente();
+			
+			System.out.println("Algoritmo:");
+			int alg = leia.nextInt();
+			switch(alg) {
+			case(1):
+				System.out.println("Deposite seu dinheiro.");
+				cc.depositar(leia.nextInt());
+				System.out.println("Saldo"+cc.getSaldo());
+	
+			}
+			System.out.println("deseja sair: 0");
+			sair= leia.nextInt();
+		}while(sair!=0);
