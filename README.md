@@ -1,5 +1,6 @@
-reset.css
-tag form
+https://html.com/#Welcome_You8217ve_Found_the_Easiest_Way_to_Learn_HTML_and_CSS
+
+
 # Classwork
 algoritmos
 
